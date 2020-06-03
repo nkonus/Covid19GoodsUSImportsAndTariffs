@@ -19,10 +19,10 @@ public class Countries {
       //  insertionSort(countries);
       //  selectionSort(countries);
       //  mergeSort(countries);
-        quickSort(countries);
+      //  quickSort(countries);
     }
 
-//-----------------------------------------
+//-------------bubbleSort----------------------------
 	
 	 public static void bubbleSort(CountryImports[] original) {
 		 CountryImports[] sorted = Arrays.copyOf(original, original.length);
@@ -49,7 +49,7 @@ public class Countries {
 	    	System.out.println("Sort finished.");
 	    }
 	 
-//-----------------------------------------
+//-----------------insertionSort------------------------
 	 public static void insertionSort(CountryImports[] original) {
 		 CountryImports[] sorted = Arrays.copyOf(original, original.length);
 	    	long startTime = System.currentTimeMillis();
@@ -70,7 +70,7 @@ public class Countries {
 	
 	
 	 
-//-----------------------------------------
+//-------------------selectionSort----------------------
 	 public static void selectionSort(CountryImports[] original) {
 		 CountryImports[] sorted = Arrays.copyOf(original, original.length);
 	    	long startTime = System.currentTimeMillis();
@@ -95,7 +95,8 @@ public class Countries {
 	    	
 		
 		
-//-----------------------------------------		 
+//---------------------mergeSort--------------------	
+	 
 	    public static void mergeSort(CountryImports[] original) {
 	    	CountryImports[] sorted = Arrays.copyOf(original, original.length);
 	    	long startTime = System.currentTimeMillis();
@@ -147,7 +148,7 @@ public class Countries {
 	        
 		}
 	    
-//-----------------------------------------	
+//-------------------quickSort----------------------	
 	    
 	    public static void quickSort(CountryImports[] original) {
 	    	CountryImports[] sorted = Arrays.copyOf(original, original.length);
@@ -188,7 +189,8 @@ public class Countries {
 		}
 
 	    
-//-----------------------------------------		
+//--------------printArray---------------------------	
+		
 	 private static void printArray(CountryImports[] original) {
 	    	for(int i = 0; i < original.length; i++) {
 	    		System.out.println(original[i].getCountry() + " has imported " + original[i].getNumberOfImports()+ ".");
